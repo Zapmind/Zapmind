@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Added from new project -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/final_logo"
+        android:label="Zapmind"
+        android:roundIcon="@drawable/final_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Empty"
+        tools:targetApi="31">
+
+        <!-- Old project activities -->
+        <activity
+            android:name=".Flashcards"
+            android:exported="false" />
+        <activity
+            android:name=".What_they_said"
+            android:exported="false" />
+        <!-- The What_it_is screen from the new project is kept here.
+             If you want it to be launched directly, move the intent filter below to this activity -->
+        <activity
+            android:name=".What_it_is"
+            android:exported="false" />
+        <activity
+            android:name=".Guardian_Scheduling"
+            android:exported="false" />
+        <activity
+            android:name=".Progress"
+            android:exported="false" />
+        <activity
+            android:name=".Games"
+            android:exported="false"
+            android:theme="@style/Theme.Empty" />
+
+        <!-- Main launcher remains MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SecondActivity"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+
+
+</manifest>
