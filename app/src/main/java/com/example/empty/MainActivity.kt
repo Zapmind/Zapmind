@@ -48,10 +48,11 @@ class MainActivity : AppCompatActivity() {
         //5
         val whattheysaid1 = findViewById<Button>(R.id.btn_What_They_Said)
         whattheysaid1.setOnClickListener {
-            // Create an intent to start SecondActivity
-            val intent = Intent(this, What_they_said::class.java)
+            // Launch the new ChatActivity from the new project
+            val intent = Intent(this, com.example.empty.chat.ChatActivity::class.java)
             startActivity(intent)
         }
+
         //6
         val flashcards1 = findViewById<Button>(R.id.btn_Flashcards)
         flashcards1.setOnClickListener {

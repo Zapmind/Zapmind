@@ -3,18 +3,124 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/second_layout"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tvSecond"
+    <!-- Vertical Center Guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is the games Screen!"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical"/>
+
+    <!-- Row 1 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="horizontal"/>
+
+    <!-- Row 2 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.50"
+        android:orientation="horizontal"/>
+
+    <!-- Row 3 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.75"
+        android:orientation="horizontal"/>
+
+    <!-- 1 -->
+    <Button
+        android:id="@+id/btnWordFinder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_margin="8dp"
+        android:text="Find Word"
+        app:cornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row_1"/>
+
+    <!-- Progress Button -->
+    <Button
+        android:id="@+id/btnGame2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_margin="8dp"
+        android:text="Game 2"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row_1"/>
+
+    <!-- Guardian Scheduling Button -->
+    <Button
+        android:id="@+id/btnGame3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_margin="8dp"
+        android:text="Game 3"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="@id/guideline_row_1"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row_2"/>
+
+    <!-- What It Is? Button -->
+    <Button
+        android:id="@+id/btnGame4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_margin="8dp"
+        android:text="Game 4"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_row_1"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row_2"/>
+
+    <!-- What They Said? Button -->
+<!--    <Button-->
+<!--        android:id="@+id/btn__Said"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintDimensionRatio="1:1"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:text="What They Said?"-->
+<!--        app:cornerRadius="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"-->
+<!--        app:layout_constraintTop_toTopOf="@id/guideline_row_2"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/guideline_row_3"/>-->
+
+<!--    &lt;!&ndash; Flashcards Button &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/btncards"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintDimensionRatio="1:1"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:text="Flashcards"-->
+<!--        app:cornerRadius="10dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/guideline_vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/guideline_row_2"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/guideline_row_3"/>-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

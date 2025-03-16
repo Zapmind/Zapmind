@@ -1,0 +1,62 @@
+[
+  {
+    "letters": "C A R T",
+    "minCount": 5,
+    "validWords": ["CAB", "BAD", "BEAD", "ACE", "BED", "CAD", "AB", "AD", "BADE", "DEB", "ART", "CAT", "ACT", "ARC", "CAR", "AT", "TA"]
+  },
+  {
+    "letters": "P L A Y",
+    "minCount": 4,
+    "validWords": ["PLAY", "PAL", "LAY", "PAY", "YAP", "ALP"]
+  },
+  {
+    "letters": "M O O N",
+    "minCount": 3,
+    "validWords": ["MOON", "MONO", "NO", "ON", "MOO"]
+  },
+  {
+    "letters": "T R I S K",
+    "minCount": 4,
+    "validWords": ["RISK", "SKIRT", "SIT", "KIT", "SIR", "ITS"]
+  },
+  {
+    "letters": "G I N D R",
+    "minCount": 4,
+    "validWords": ["GRIND", "RING", "GRID", "RID", "GIN", "DIG", "GRIN", "DIN"]
+  },
+  {
+    "letters": "L T I S",
+    "minCount": 4,
+    "validWords": ["LIST", "SILT", "SIT", "LIT", "ITS"]
+  },
+  {
+    "letters": "C O D E",
+    "minCount": 4,
+    "validWords": ["CODE", "COED", "ODE", "DOC", "DOE", "COD"]
+  },
+  {
+    "letters": "R A C E",
+    "minCount": 5,
+    "validWords": ["RACE", "CARE", "ACRE", "CAR", "ARC", "ACE", "ERA"]
+  },
+  {
+    "letters": "S O I L",
+    "minCount": 4,
+    "validWords": ["SOIL", "SILO", "LOIS", "OILS", "SOL"]
+  },
+  {
+    "letters": "T E A R",
+    "minCount": 5,
+    "validWords": ["TEAR", "RATE", "TARE", "EAR", "ARE", "ART", "RAT", "ERA", "ETA"]
+  },
+  {
+    "letters": "B A T S",
+    "minCount": 4,
+    "validWords": ["BATS", "STAB", "BAT", "TAB"]
+  },
+  {
+    "letters": "P A R K",
+    "minCount": 4,
+    "validWords": ["PARK", "RAP", "PAR", "ARK"]
+  }
+]

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginTop="@dimen/screen_top_margin"
+    android:padding="16dp">
+
+    <!-- Display available letters -->
+    <TextView
+        android:id="@+id/tvLetters"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Available Letters"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Show minimum words required -->
+    <TextView
+        android:id="@+id/tvMinWords"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enter at least X words"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvLetters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Chronometer -->
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvMinWords"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Word Input Field -->
+    <EditText
+        android:id="@+id/etWord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your word"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/chronometer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@id/etWord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Found Words Display -->
+    <TextView
+        android:id="@+id/tvFoundWords"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Found Words:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btnSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Score Display -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Score: "
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tvFoundWords"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- New Game Button -->
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Next Quiz"
+        app:layout_constraintTop_toBottomOf="@id/tvScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
