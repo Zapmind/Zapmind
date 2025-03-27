@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
     <!-- Added from new project -->
     <uses-feature android:name="android.hardware.camera" />
-
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
 
     <application
         android:allowBackup="true"
@@ -58,6 +59,9 @@
         <activity
             android:name=".SecondActivity"
             android:parentActivityName=".MainActivity" />
+
+        <receiver android:name=".ReminderReceiver" android:exported="false" />
+
     </application>
 
 </manifest>
